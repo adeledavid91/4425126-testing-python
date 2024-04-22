@@ -1,4 +1,5 @@
 from calculate.view import View
+# on lance avec pytest .\tests\test_view.py
 
 
 def test_should_print_menu(capsys):

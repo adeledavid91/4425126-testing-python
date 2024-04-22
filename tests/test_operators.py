@@ -1,6 +1,7 @@
 import pytest
 
 from calculate.operators import Operators
+# on lance le test avec  :  pytest .\tests\test_operators.py
 
 
 def test_should_make_addition():
