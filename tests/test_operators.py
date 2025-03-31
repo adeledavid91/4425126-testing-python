@@ -142,3 +142,20 @@ def test_division_should_return_none_with_zero_division():
     operation = "5.5 / 0"
     expected_value = None
     assert sut.division(operation) == expected_value
+
+
+def test_substraction_operation():
+    sut = Operators()
+    operation = "5.5 + 10 - 10"
+    expected_value = 5.6
+    sut.substraction(operation)
+    print(f"operation : {sut.operation}")
+    print(f"signe : {sut.signe}")
+    print(f"result : {sut.result}")
+    print(f"expected value : {expected_value}")
+
+def test_division():
+    numerator = 2
+    denominator = 0
+    with pytest.raises(ZeroDivisionError):
+        division(numerator, denominator)
